@@ -1,0 +1,12 @@
+@media (max-width: 800px) {
+
+    body{
+        background: #fff;
+    }
+
+    .container{
+        display: grid;
+        grid-template-rows: repeat(8, 1fr);
+    }
+    
+}
