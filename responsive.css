@@ -1,12 +1,131 @@
 @media (max-width: 800px) {
 
-    body{
-        background: #fff;
+    .container{
+        width: 100%;
+        height: 100vh;
     }
 
-    .container{
-        display: grid;
-        grid-template-rows: repeat(8, 1fr);
+    .container-left,
+    .container-right{
+        position: absolute;
+        opacity: 0;
     }
-    
+
+    .container-center{
+        width: 100%;
+        height: 1500px;
+        grid-column: 1/-1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-center .title{
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+
+    .container-center .img{
+        width: 100%;
+        height: 180px;
+    }
+
+    .container-center .img > img{
+        margin: 10px 30px;
+    }
+
+    .container-center .container-btn,
+    .container-center .container-main-btn{
+        opacity: 0;
+        position: absolute;
+    }
+
+    .container-center .commands{
+        margin-top: 20px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .container-center .line{
+        border: 2px solid rgba(184, 184, 184, 0.616);
+        width: 80%;
+        margin-top: 25px;
+        margin-left: 35px;
+    }
+
+    .container-center .commands > .title-commands{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
+
+    .container-center .commands > li{
+        margin: 5px 8px;
+        font-size: 1.05rem;
+        list-style: none;
+    }
+
+    .container-center .commands > li > span{
+        font-size: 0.8rem;
+    }
+
+    .container-center .text-box > .text_box{
+        border: 2px solid rgba(0, 0, 0, 0.527);
+        width: 90%;
+        height: 250px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        border-radius: 15px;
+        background: #414145;
+    }
+
+    .container-center .btns{
+        margin-top: 30px;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container-center .btns > .btn-files,
+    .container-center .btns > .btn-apps,
+    .container-center .btns > .btn-sites,
+    .container-center .btns > .btn-contacts,
+    .container-center .btns > .btn-languages-mx,
+    .container-center .btns > .btn-languages-us,
+    .container-center .btns > .btn-add-pages,
+    .container-center .btns > .btn-add-apps,
+    .container-center .btns > .btn-add-files,
+    .container-center .btns > .btn-add-contacts,
+    .container-center .btns > .btn-escuchar{
+        width: 170px;
+        height: 40px;
+        margin-left: 6px;
+        border-radius: 15px;
+        border: 2px solid rgba(0, 0, 0, 0.781);
+        background: transparent;
+        transition: 0.5s;
+    }
+
+    .container-center .btns > .btn-files:hover,
+    .container-center .btns > .btn-apps:hover,
+    .container-center .btns > .btn-sites:hover,
+    .container-center .btns > .btn-contacts:hover,
+    .container-center .btns > .btn-languages-mx:hover,
+    .container-center .btns > .btn-languages-us:hover,
+    .container-center .btns > .btn-add-pages:hover,
+    .container-center .btns > .btn-add-apps:hover,
+    .container-center .btns > .btn-add-files:hover,
+    .container-center .btns > .btn-add-contacts:hover,
+    .container-center .btns > .btn-escuchar:hover{
+        background: rgba(0, 0, 0, 0.671);
+        border: none;
+        color: #fff;
+        transition: 0.5s;
+    }
+
 }
